@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Laundry 1kg-1rb - Layanan Laundry Kiloan & Antar Jemput</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="atas">
+        <div class="wadah">
+            <a href="#" class="merek">
+                <img src="logo.jpg" alt="Logo Laundry 1kg-1rb" style="height: 36px; vertical-align: middle;">
+            </a>
+            <nav>
+                <a href="#keunggulan">Keunggulan</a>
+                <a href="#pricelist">Pricelist</a>
+                <a href="#cara-pesan">Cara Pesan</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="wadah">
+                <h1>Laundry 1kg-1rb</h1>
+                <p>Jasa laundry kiloan & satuan profesional di Jogja. Bersih, wangi, 1 mesin 1 pelanggan, dan siap
+                    GRATIS antar-jemput ke kos, rumah, atau hotel Anda.</p>
+                <a href="#pesan" class="tombol">Pesan Antar Jemput</a>
+                <div style="margin-top: 24px;">
+                    <img src="banner.jpg" alt="Foto Outlet Laundry"
+                        style="width: 100%; max-width: 720px; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,0.2);">
+                </div>
+            </div>
+        </section>
+
+        <!-- Keunggulan Layanan -->
+        <section id="keunggulan" class="wadah">
+            <h2>Kenapa Memilih Laundry 1kg-1rb?</h2>
+            <div class="grid">
+                <article class="kartu">
+                    <h3>1 Mesin 1 Pelanggan</h3>
+                    <p>Pakaian Anda dijamin tidak dicampur dengan pakaian orang lain agar selalu higienis dan tidak
+                        tertukar.</p>
+                </article>
+                <article class="kartu">
+                    <h3>Gratis Antar Jemput</h3>
+                    <p>Fasilitas kurir siap jemput dan antar cucian langsung ke kos, kontrakan, maupun hotel di area
+                        yang terjangkau.</p>
+                </article>
+                <article class="kartu">
+                    <h3>Packing Rapi & Wangi</h3>
+                    <p>Menggunakan deterjen ramah serat kain, pewangi tahan lama, serta plastik wrap tebal berkualitas.
+                    </p>
+                </article>
+                <article class="kartu">
+                    <h3>Layanan Express</h3>
+                    <p>Butuh pakaian cepat untuk acara kampus atau dinas? Tersedia pilihan kilat express selesai 3 - 6
+                        jam.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Pricelist di-render oleh script.js -->
+        <section id="pricelist" class="wadah">
+            <h2>Pricelist & Layanan Kami</h2>
+            <div id="daftar-fitur" class="grid"></div>
+        </section>
+
+        <!-- Alur Pemesanan -->
+        <section id="cara-pesan" class="wadah">
+            <h2>Cara Pesan Antar Jemput</h2>
+            <div class="grid">
+                <article class="kartu">
+                    <h3>1. Kirim Data</h3>
+                    <p>Isi formulir online di web ini dengan alamat kos/rumah dan nomor WhatsApp aktif Anda.</p>
+                </article>
+                <article class="kartu">
+                    <h3>2. Penjemputan</h3>
+                    <p>Kurir kami akan menghubungi via WA dan langsung mengambil pakaian kotor ke lokasi Anda.</p>
+                </article>
+                <article class="kartu">
+                    <h3>3. Diantar Bersih</h3>
+                    <p>Setelah ditimbang dan diproses, pakaian bersih dan rapi diantar kembali ke tempat Anda.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Tanya Jawab FAQ -->
+        <section id="faq" class="wadah">
+            <h2>Pertanyaan yang Sering Diajukan (FAQ)</h2>
+            <details>
+                <summary>Apakah ada syarat minimal order untuk gratis antar jemput?</summary>
+                <p>Minimal pemesanan untuk layanan antar jemput gratis adalah 5 kg untuk area seputaran kampus dan kota
+                    Yogyakarta.</p>
+            </details>
+            <details>
+                <summary>Apakah pakaian dicampur dengan pelanggan lain?</summary>
+                <p>Tentu tidak. Kami menerapkan standar ketat 1 mesin cuci hanya untuk 1 pelanggan saja demi kebersihan
+                    dan keamanan pakaian.</p>
+            </details>
+            <details>
+                <summary>Bagaimana sistem pembayarannya?</summary>
+                <p>Pembayaran sangat fleksibel, bisa dilakukan secara tunai (cash) saat pakaian diantar atau transfer
+                    melalui QRIS/Mobile Banking.</p>
+            </details>
+        </section>
+
+        <!-- Form Pemesanan -->
+        <section id="pesan" class="wadah">
+            <h2>Form Booking Antar Jemput</h2>
+            <form id="form-daftar" class="kartu form" novalidate>
+                <label>Nama Lengkap
+                    <input name="nama" placeholder="Contoh: Budi Santoso" required>
+                </label>
+                <label>Nomor WhatsApp
+                    <input name="telepon" type="tel" placeholder="Contoh: 08123456789" required>
+                </label>
+                <label>Alamat / Nama Kos & No. Kamar
+                    <input name="alamat" placeholder="Contoh: Kos Melati, Jl. Kaliurang KM 5" required>
+                </label>
+                <label>Pilihan Layanan
+                    <select name="layanan" class="pilihan" required>
+                        <option value="Cuci Komplit Reguler (2 Hari)">Cuci Komplit Reguler (2 Hari)</option>
+                        <option value="Cuci Kilat Express (3 - 6 Jam)">Cuci Kilat Express (3 - 6 Jam)</option>
+                        <option value="Cuci Kering Lipat">Cuci Kering Lipat</option>
+                        <option value="Perawatan Sepatu & Tas">Perawatan Sepatu & Tas</option>
+                        <option value="Bed Cover / Selimut">Bed Cover / Selimut</option>
+                    </select>
+                </label>
+                <p id="pesan" class="pesan" hidden></p>
+                <button type="submit">Pesan Sekarang</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bawah">
+        <div class="wadah">
+            <p><strong>Laundry 1kg-1rb</strong> · Jl. Kaliurang KM 5, Caturtunggal, Depok, Sleman, D.I. Yogyakarta</p>
+            <p>Buka Setiap Hari: 07.00 – 21.00 WIB | Mini Hackathon Sistem Informasi Semester 3</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
